@@ -1,0 +1,35 @@
+package config
+
+import (
+	"log"
+	"os"
+
+	"github.com/joho/godotenv"
+)
+
+type EnvConfig struct {
+	APIPort     string
+	DatabaseURL string
+}
+
+func LoadEnv() *EnvConfig {
+	err := godotenv.Load("../.env")
+	if err != nil {
+		log.Println("⚠️ Arquivo .env não encontrado. Utilizando variáveis de ambiente do sistema.")
+	}
+
+	port := os.Getenv("API_PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	dbURL := os.Getenv("DATABASE_URL")
+	if dbURL == "" {
+		log.Fatal("❌ A variável DATABASE_URL é obrigatória e não foi encontrada!")
+	}
+
+	return &EnvConfig{
+		APIPort:     port,
+		DatabaseURL: dbURL,
+	}
+}

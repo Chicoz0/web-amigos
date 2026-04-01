@@ -1,0 +1,14 @@
+include:
+  - database/compose.yml
+
+services:
+  api:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: go_api
+    ports:
+      - "${API_PORT}:${API_PORT}"
+    environment:
+      - API_PORT=${API_PORT}
+      - DATABASE_URL=${DATABASE_URL}

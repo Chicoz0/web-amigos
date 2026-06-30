@@ -125,11 +125,3 @@ web-amigos/
 ## Estrutura do Banco de Dados
 
 ![schema_do_banco](database/schema.png)
-
-## Membros do Grupo
-
-* Eduardo Vinicius Faleiro
-* Francisco de Paula Lemos
-* Lucas dos Santos Santin
-* Lucas Gusmão Valduga
-* Marlon Correia

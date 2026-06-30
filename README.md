@@ -1,5 +1,21 @@
 # Plataforma Web de Venda de Cursos
 
+## Alunos
+
+* Lucas dos Santos Santin - 25103314
+* Lucas Gusmão Valduga - 21103505
+* Eduardo Vinícius Faleiro - 25103307
+* Marlon Correia Simas - 21102217
+* Francisco de Paula Lemos - 25100810
+
+## Link Repositório No GitHub
+
+* https://github.com/Chicoz0/web-amigos
+
+## Link Sistema em produção
+
+* https://learn-lab.up.railway.app/
+
 ## Descrição
 Aplicação web voltada para a venda de cursos online, contando com sistema de autenticação de usuários e fluxo completo de compra. A plataforma permite que os usuários naveguem pelo catálogo, adquiram acesso através de uma integração com API de pagamento e interajam com a comunidade por meio de comentários nas aulas dos cursos.
 
